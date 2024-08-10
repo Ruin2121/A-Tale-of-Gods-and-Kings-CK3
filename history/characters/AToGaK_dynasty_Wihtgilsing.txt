@@ -1,0 +1,94 @@
+﻿205025 = {
+    # Father of Hengist, King of Kent (1.1)
+    # Known only as "a Germanic Chieftain"
+    #########################
+    # I'm am going to reject Wihtgils as the name of this character since it's a legendary name /
+    # and it is a lineage that has been used many times across the history of Britain.
+    # "son of Wictgils, son of Witta, son of Wecta, son of Woden"
+    # Most royal lineages of Britain have this segment at some point in their history.
+    #
+    # As far as the game is concerned this is an unnamed lowborn with completely fabricated info.
+
+	name = "Unknown"
+	religion = norse_pagan
+	culture = anglo_saxon
+	400.1.1 = {
+		birth = yes
+	}
+	440.1.1 = {
+		death = yes
+	}
+}
+
+mother_of_205026 = {
+    # Mother of Hengist, King of Kent (1.1)
+    # No information exists, made for the sake of argument.
+    #########################
+
+    name = "Unknown"
+    female = yes
+    religion = norse_pagan
+    culture = anglo_saxon
+    400.1.1 = {
+        birth = yes
+    }
+    440.1.1 = {
+        death = yes
+    }
+}
+
+205026 = {
+    # Hengist, King of Kent (1.1)
+    #########################
+    # Name:
+    # Attested Names:
+    # - Hengist (Anglicised) (1.1)
+    #
+    # Vanilla Name:
+    # - Hengest
+    #
+    # Will use only attested name for now
+    name = "Hengist"
+
+    #########################
+    # Dynasty:
+    # Attested:
+    #
+    # Vanilla:
+    # - Wihtgilsing
+    # 
+    # Nothing else found, will use vanilla name for now
+	dynasty = 1047001 # Wihtgilsing
+
+    #########################
+	religion = norse_pagan
+	culture = anglo_saxon
+    #########################
+    # Parentage:
+    # Attested:
+    # Father:
+    # - Son of a Germanic Chieftain (no name given) (1.1)
+    # Mother:
+    # 
+    # Vanilla:
+    # Father:
+    # - Wihtgils (205025)
+    # Mother:
+    #
+    #########################
+	father = 205025
+    mother = mother_of_205026
+
+	425.1.1 = {
+        # Nothing known about this date or birth
+		birth = yes
+	}
+    455.1.1 = {
+        # Exact date unknown
+        # Created the Kingdom of Kent (1.1)
+    }
+	500.1.1 = {
+        # Nothing known about this date or death
+		death = yes
+	}
+}

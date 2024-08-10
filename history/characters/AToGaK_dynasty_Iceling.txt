@@ -1,0 +1,57 @@
+﻿205072 = {
+    # Offa, King of Mercia (1.2)
+    #################################
+    # Names:
+    # Attested:
+    # - Offa (Anglicised) (1.2)
+    #
+    # Vanilla Name:
+    # - Offa
+    #
+    # Names are same
+	name = "Offa"
+
+    #################################
+    # Dynasty:
+    # Attested:
+    #
+    # Vanilla:
+    # - Iceling
+    # 
+    # Nothing else found, will use vanilla name for now
+	dynasty = 1047002 # Iceling
+
+    #################################
+	religion = catholic
+	culture = anglo_saxon
+    #################################
+    # Parentage:
+    # Attested:
+    # Father:
+    # 
+    # Mother:
+    #
+    # Vanilla:
+    # Father:
+    # - Thingfrith (205071)
+    # Mother:
+    # - Marcellina
+    #################################
+	father = 205071
+	#mother = Marcellina
+
+
+	730.1.1 = {
+        # Nothing known about date or birth
+		birth = yes
+	}
+	760.1.1 = {
+        # Nothing known about date or marriage
+		add_spouse = 205074
+	}
+	796.7.29 = {
+        # Nothing known about exact date of death
+        # Death is attested as 796 (1.2)
+		death = yes
+	}
+}

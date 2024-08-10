@@ -1,0 +1,7 @@
+﻿AToGaK_modern_day_debug_bookmark = {
+    start_date = 2024.8.9
+    is_playable = yes
+    weight = {
+        value = 0
+    }
+}

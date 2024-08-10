@@ -1,0 +1,54 @@
+﻿205141 = {
+    # Cerdic, King of Wessex (1.2)
+    #######################################
+    # Names:
+    # Attested:
+    # - Cerdic (Anglicised) (1.2)
+    #
+    # Vanilla Name:
+    # - Cerdic
+    #
+    # Names are same
+	name = "Cerdic"
+
+    #######################################
+    # Dynasty:
+    # Attested:
+    # - First known ancestor of Wessex dynasty, referred to as Cerdicing or Cerdingas (1.2)
+    # Vanilla:
+    # - Cerdicing
+    #######################################
+	dynasty = 1047006 # Cerdicing
+
+    #######################################
+	religion = norse_pagan
+	culture = anglo_saxon
+    #######################################
+    # Parentage:
+    # Attested:
+    # Father:
+    # 
+    # Mother:
+    # 
+    # Vanilla:
+    # Father:
+    # 
+    # Mother:
+    #
+    #######################################
+	460.1.1 = {
+        # Nothing known about date or birth
+		birth = yes
+	}
+
+    # Supposedly came to Britain in 494/5 (1.2)
+
+    519.1.1 = {
+        # Founded the Kingdom of Wessex sometime in 519 (1.2)
+    }
+
+	534.1.1 = {
+        # Nothing known about date or death
+		death = yes
+	}
+}
