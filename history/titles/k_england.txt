@@ -127,7 +127,7 @@ c_middlesex = {
 	802.1.1 = {
 		holder = 33354 # Ecgberht
 	}
-	839.2.5 = {
+	839.2.4 = {
 		holder = 33355 # Aethelwulf
 	}
 	856.1.13 = {
@@ -370,7 +370,7 @@ c_hertfordshire = {
 	802.1.1 = {
 		holder = 33354 # Ecgberht
 	}
-	839.2.5 = {
+	839.2.4 = {
 		holder = 33355 # Aethelwulf
 	}
 	856.1.1 = {
@@ -482,7 +482,7 @@ c_buckinghamshire = {
 	802.1.1 = {
 		holder = 33354 # Ecgberht
 	}
-	839.2.5 = {
+	839.2.4 = {
 		holder = 33355 # Aethelwulf
 	}
 	856.1.1 = {
@@ -1810,6 +1810,20 @@ d_hereford = { # Duchy / Petty Kingdom of Mercia
         # Offa dies sometime in 796, who's new king?
         # TODO: Hole in history
     }
+
+    # TODO: Hole in history
+    # Wiglaf is king at some point before Egbert took control.
+
+    829.1.1 = {
+        # Egbert, King of Wessex (1.4)
+        # Took throne from Wiglaf, King of Mercia (205084)
+        holder = 33354
+    }
+    830.1.1 = {
+        # Wiglaf, King of Mercia (205084)
+        # Expelled Egbert from Mercia
+        holder = 205084
+    }
 	852.1.1 = {
 		holder = 163102
 	}
@@ -2477,6 +2491,12 @@ c_wiltshire = {
 	757.1.1 = {
 		holder = 205180
 	}
+    786.1.1 = {
+        # Wulfstan, Ealdorman of Wiltshire (1.4)
+        # Date unknown, using 786 for now.
+        holder = wulfstan_ealdorman_of_wiltshire
+        liege = "d_somerset" # Petty Kingdom of Wessex
+    }
 	865.1.1 = {
 		liege = "k_england"
 		holder = 33358
@@ -2677,6 +2697,20 @@ d_canterbury = { # Duchy / Petty Kingdom of Kent
 	765.1.1 = {
 		holder = 205049
 	}
+    784.1.1 = {
+        # Ealhmund, King of Kent (1.4)
+        # Is known to have been reigning in Kent in 784 or 786 (1.4)
+        holder = 205189
+    }
+    786.1.1 = {
+        # Ealhmund, King of Kent (1.4)
+        # Is known to have been reigning in Kent in 784 or 786 (1.4)
+        # 784 is likely the correct date since Offa, King of Mecia supposedly ruled Kent after 784
+    }
+
+    # Supposedly Egbert, King of Wessex became 'subregulus' of Kent in 790/96 (1.4)
+    # This is unlikely due to above comment about Offa, King of Mecia
+
 	796.1.1 = {
 		holder = 205050
 	}
@@ -3061,14 +3095,22 @@ d_somerset = { # Duchy / Petty Kingdom of Wessex
         # Established the Kingdom of Wessex (1.2)
         holder = 205141
     }
+
     # TODO: Hole in history
+
 	757.1.1 = {
-		holder = 205180
+		holder = 205180 # Cynewulf
 	}
+
+    # TODO: Hole in history
+    # Beorhtric (205181) was somewhere in here (1.4)
+
 	802.1.1 = {
-		holder = 33354 # Ecgberht
+        # Egbert, King of Wessex (1.4)
+        # Succeeded Beorhtric (205181) as King of Wessex (1.4)
+		holder = 33354
 	}
-	839.2.5 = {
+	839.2.4 = {
 		holder = 33355 # Aethelwulf
 	}
 	856.1.1 = {

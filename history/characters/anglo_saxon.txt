@@ -1714,20 +1714,6 @@
 	}
 }
 
-33354 = {
-	name = "Ecgberht"
-	dynasty = 1047006
-	religion = "catholic"
-	culture = anglo_saxon
-	father = 205189
-	769.1.1 = {
-		birth = "769.1.1"
-	}
-	839.1.1 = {
-		death = "839.1.1"
-		dynasty_house = house_british_isles_wessex	}
-}
-
 306022 = {
 	name = Oslac
 	dynasty = 2004006 #af Oslac
@@ -5026,33 +5012,6 @@
 	}
 	758.1.1 = {
 		death = "758.1.1"
-	}
-}
-205188 = {
-	name = "Eafa" #
-	dynasty = 1047006
-	religion = "catholic"
-	culture = anglo_saxon
-	father = 205187
-	mother = 205191
-	730.1.1 = {
-		birth = "730.1.1"
-	}
-	760.1.1 = {
-		death = "760.1.1"
-	}
-}
-205189 = {
-	name = "Ealhmund" #
-	dynasty = 1047006
-	religion = "catholic"
-	culture = anglo_saxon
-	father = 205188
-	750.1.1 = {
-		birth = "750.1.1"
-	}
-	784.1.1 = {
-		death = "784.1.1"
 	}
 }
 

@@ -2,3 +2,143 @@
 #     name = "Elizabeth"
 #     female = yes
 # }
+
+mother_of_33354 = {
+    # Identity is unknown (1.4)
+    name = "Unknown"
+    female = yes
+    religion = catholic
+	culture = anglo_saxon
+
+    750.1.1 = {
+		birth = yes
+	}
+    786.1.1 = {
+        death = yes
+    }
+}
+
+mother_of_205189 = {
+    # A Kentish Princess, whose identity is unknown (1.4)
+    name = "Unknown"
+    female = yes
+
+    religion = catholic
+	culture = anglo_saxon
+
+    730.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		death = yes
+	}
+}
+
+father_of_saint_alburga = {
+    # Unknown
+    # Needed as father for Saint Alburga (saint_alburga_33354_sibling)
+    # She was believed to be a half-sister to Egbert (33354), but Ealhmund (205189) is not known to have had other children.
+    # So we will assume she had a different father and maintains the relation with Egbert through their shared mother.
+
+    name = "Unknown"
+    culture = anglo_saxon
+    religion = catholic
+
+    750.1.1 = {
+		birth = yes
+	}
+    786.1.1 = {
+        death = yes
+    }
+}
+
+saint_alburga_33354_sibling = {
+    # Saint Alburga (1.4)
+    # May not have existed, attesting info is dubious when traced
+    # Attested as a "half-sister" to Egbert (33354) so we will set mother same as Egbert but use different father.
+
+    name = "Alburga"
+    female = yes
+    culture = anglo_saxon
+    religion = catholic
+
+    father = father_of_saint_alburga
+    mother = mother_of_33354
+
+    768.1.1 = {
+        # Birth date unknown
+        birth = yes
+    }
+
+    786.1.1 = {
+        # Alburga married Wulfstan, Ealdorman of Wiltshire, at some point (1.4)
+        # Let's throw this here for now
+        # NOTE: This is handled in Wulstan's entry since he would be primary spouse in marriage, see wulfstan_ealdorman_of_wiltshire
+    }
+
+    800.1.1 = {
+        # Possible death date (1.4) but not likely IMO
+        # Timing would indicate that Alburga likely entered the foundation of Wilton around this time.
+        # Only way to do this is to set the employer, but idk who the employer would be for this.
+        # b_wilton has no title history, and is a city instead of a church, so idk what to do here.
+    }
+
+    810.1.1 = {
+        # Possible death date (1.4)
+        # We will use the later date for some extra wiggle room
+        trait = saint
+        death = yes
+    }
+}
+
+wulfstan_ealdorman_of_wiltshire = {
+    # Wulfstan, Ealdorman of Wiltshire (1.4)
+    name = "Wulfstan"
+    culture = anglo_saxon
+    religion = catholic
+
+    750.1.1 = {
+        # Birth date unknown
+        birth = yes
+    }
+
+    # At some point Wulstan becomes Ealdorman of Wiltshire, no idea when.
+    # Let's set it to 786.1.1 for now.
+
+    786.1.1 = {
+        # Alburga married Wulfstan, Ealdorman of Wiltshire, at some point (1.4)
+        # Let's throw this here for now
+        add_spouse = saint_alburga_33354_sibling
+    }
+
+    800.1.1 = {
+        # Wulfstan predeceased his wife. Exact date unknown. (1.4)
+        death = yes
+    }
+}
+
+wife_of_33354 = {
+    # Redburga, sister of the King of the Franks, identity uncertain (1.4)
+    # The king of the Franks at this time would have been Charlemagne, and he doesn't seem to have a 'Redburga' as a sister.
+    # Wife of Egbert (33354) (1.4)
+    name = "Redburga"
+    female = yes
+    culture = frankish
+    religion = catholic
+
+    769.1.1 = {
+        # Birth date unknown, copying from Egbert
+        birth = yes
+    }
+
+    794.1.1 = {
+        # Egbert and Redburga married at some point (1.4)
+        # Date and location unknown.
+        # NOTE : Marriage is handled in Egbert's entry
+    }
+
+    839.1.1 = {
+        # Death date unknown, copying from Egbert
+        death = yes
+    }
+}

@@ -1,4 +1,15 @@
-﻿205141 = {
+﻿# The House of Wessex doesn't seem to have a definite founding date
+# The dynasty orginally was likely Cerdicing or Cerdingas
+# Not sure when the House of Wessex started being used, because in modern times Cerdicing and the House of Wessex are interchangeable
+# The game sets King Egbert (Ecgberht) as the founder of the House of Wessex, thus branching it off from the Cerdicing dynasty
+# We will keep this for now since there is no real alternative in current mod source
+
+#############################
+### The Cerdicing Dynasty ###
+#############################
+# Also known as Cerdingas
+
+205141 = {
     # Cerdic, King of Wessex (1.2)
     #######################################
     # Names:
@@ -9,12 +20,13 @@
     # - Cerdic
     #
     # Names are same
+    #######################################
 	name = "Cerdic"
 
     #######################################
     # Dynasty:
     # Attested:
-    # - First known ancestor of Wessex dynasty, referred to as Cerdicing or Cerdingas (1.2)
+    # - First known ancestor of the House of Wessex, referred to as Cerdicing or Cerdingas (1.2)
     # Vanilla:
     # - Cerdicing
     #######################################
@@ -23,6 +35,7 @@
     #######################################
 	religion = norse_pagan
 	culture = anglo_saxon
+
     #######################################
     # Parentage:
     # Attested:
@@ -36,6 +49,7 @@
     # Mother:
     #
     #######################################
+
 	460.1.1 = {
         # Nothing known about date or birth
 		birth = yes
@@ -49,6 +63,224 @@
 
 	534.1.1 = {
         # Nothing known about date or death
+		death = yes
+	}
+}
+
+205188 = {
+    # Eafa of Wessex (1.4)
+    #########################
+    # Name:
+    # Attested Names:
+    # - Eafa (Anglicised) (1.4)
+    #
+    # Vanilla Name:
+    # - Eafa
+    #
+    # Names are same
+    #########################
+	name = "Eafa"
+
+    #########################
+    # Dynasty:
+    # Attested:
+    # - Cerdicing (assumed)
+    # Vanilla:
+    # - Cerdicing
+    #########################
+	dynasty = 1047006
+
+    #########################
+	religion = catholic
+	culture = anglo_saxon
+
+    #########################
+    # Parentage:
+    # Attested:
+    # Father:
+    #
+    # Mother:
+    #
+    # Vanilla:
+    # Father:
+    # - Eoppa (205187) Matches the legends
+    # Mother:
+    # - Seaxburh (205191) No idea about your identity
+    #########################
+	father = 205187
+	mother = 205191
+
+	730.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		death = yes
+	}
+}
+
+205189 = {
+    # Ealhmund, King of Kent (1.4)
+    #########################
+    # Name:
+    # Attested Names:
+    # - Ealhmund (Anglicised) (1.4)
+    #
+    # Vanilla Name:
+    # - Ealhmund
+    #
+    # Names are same
+    #########################
+	name = "Ealhmund"
+
+    #########################
+    # Dynasty:
+    # Attested:
+    # - Cerdicing (assumed)
+    # Vanilla:
+    # - Cerdicing
+    #########################
+	dynasty = 1047006 # Cerdicing
+
+    #########################
+	religion = catholic
+	culture = anglo_saxon
+
+    #########################
+    # Parentage:
+    # Attested:
+    # Father:
+    # - Eafa of Wessex (205188) (1.4)
+    # Mother:
+    # - a Kentish Princess, whose identity is unknown (1.4)
+    # Vanilla:
+    # Father:
+    # - Eafa (205188)
+    # Mother:
+    #
+    #########################
+	father = 205188 # Eafa of Wessex
+    mother = mother_of_205189 # A Kentish Princess
+
+	750.1.1 = {
+        # Nothing known about date or birth
+		birth = yes
+	}
+
+	784.1.1 = {
+        # Is known to have been reigning in Kent in 784 or 786 (1.4)
+	}
+
+    786.1.1 = {
+        # Is known to have been reigning in Kent in 784 or 786 (1.4)
+        # He died in 786? (1.4)
+        death = yes
+    }
+}
+
+#######################
+### HOUSE OF WESSEX ###
+#######################
+
+33354 = {
+    # Egbert, King of Wessex (1.4)
+    #######################################
+    # Names:
+    # Attested:
+    # - Egbert (Anglicised) (1.4)
+    #
+    # Vanilla Name:
+    # - Ecgberht
+    #
+    # Vanilla likely more accurate, but we will use Attested name for now
+	name = "Egbert"
+
+    #######################################
+    # Dynasty:
+    # Attested:
+    # - Cerdicing / House of Wessex (1.4)
+    # Vanilla:
+    # - Cerdicing
+    # - Founds the House of Wessex
+    #######################################
+	dynasty = 1047006 # Cerdicing
+
+    #######################################
+	religion = catholic
+	culture = anglo_saxon
+    #######################################
+    # Parentage:
+    # Attested:
+    # Father:
+    # - Ealhmund, King of Kent (205189) (1.4)
+    # Mother:
+    # - Unknown (1.4)
+    # Vanilla:
+    # Father:
+    # - Ealhmund (205189)
+    # Mother:
+    #
+    #######################################
+	father = 205189 # Ealhmund, King of Kent
+    mother = mother_of_33354 # Unknown
+
+	769.1.1 = {
+        # Born between 769 and 780 (1.4)
+		birth = yes
+	}
+
+    794.1.1 = {
+        # Date and location unknown.
+        add_spouse = wife_of_33354 # Redburga, sister of the King of the Franks, identity uncertain
+    }
+
+    # Supposedly became 'Subregulus' of Kent in 790/96 (1.4)
+    # This is unlikely since Kent should be under direct rule of Offa, King of Mercia, at this point.
+
+    802.1.1 = {
+        # Egbert succeeded Beorhtric (205181) as King of Wessex (1.4)
+        # Now would be a good time to have the shift from 'Cerdicing' to 'of Wessex'
+        dynasty_house = house_british_isles_wessex
+    }
+
+    829.1.1 = {
+        # Egbert dethroned Wiglaf (205084), King of Mercia, thus becoming King of Mercia (1.4)
+    }
+
+    830.1.1 = {
+        # Egbert was driven out of Mercia, thus losing the title of King of Mercia (1.4)
+        # Likely Wiglaf that did this.
+    }
+
+	839.2.4 = {
+        # He died either on 4 February 839 or sometime after June in 839 (1.5)
+        # We will use 4 Feb since that is the most definite date
+		death = yes
+    }
+}
+
+98 = {
+    # King Edgar (1.2)
+    # TODO: Deal with this later, only here in mention, has section later in book.
+	name = "Eadgar"
+	# AKA: Eadgar 'the Peaceable'
+	dynasty_house = house_british_isles_wessex # Dynasty: Cerdicing ; House: Wessex
+	martial = 2
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 8
+	religion = "catholic"
+	culture = anglo_saxon
+	trait = honest
+	trait = education_diplomacy_4
+	father = 102
+	943.8.7 = {
+		birth = yes
+	}
+    973.1.1 = {
+        # King Edgar is crowned. Need to find exact date. (1.2)
+        # Crowned by Archbishop Dunstan of Canterbury (180683) (1.2)
+    }
+	975.7.8 = {
 		death = yes
 	}
 }
